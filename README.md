@@ -19,6 +19,7 @@ Untuk menyimpan data-data dari aplikasi SMEUs, kami menggunakan Cloud SQL untuk 
 
 Compute Engine:
 Kami menggunakan Compute Engine untuk menjalankan instance virtual yang menjalankan aplikasi SMEUs. Kami membuat instance dengan dengan nama smeus-api-instance kemudian mengatur firewall rules untuk mengizinkan akses ke port yang dibutuhkan sehingga memudahkan tim Mobile Development mengakses API yang dibutuhkan. Berikut merupakan konfigurasi dari instance Compute Engine yang kami gunakan:
+
 ![Konfigurasi Compute Engine-1](https://github.com/Skycyon/CC-SMEUs/assets/102421135/6277ef34-98ff-4d7a-bf04-578c1166242c)
 ![Konfigurasi Compute Engine-2](https://github.com/Skycyon/CC-SMEUs/assets/102421135/733e99ab-d187-4e91-99fc-e013227a7526)
 
