@@ -6,22 +6,23 @@ APIs documentation: https://documenter.getpostman.com/view/24378007/2s93mASykW
 GCP TOOLS
 
 Cloud Storage:
-Cloud Storage digunakan untuk menyimpan file-file statis terutama gambar dari SME yang telah kami data. Adapun total gambar yang disimpan di cloud storage berjumlah 320 gambar dari SME dengan format jpeg. Kami membuat bucket dengan nama capstone-smeus dan mengatur izin akses untuk memastikan file-file dapat diakses dan ditampilkan di frontend nantinya. Berikut merupakan konfigurasi dari cloud storage yang kami gunakan:
-![Konfigurasi Cloud Storage](https://github.com/Skycyon/CC-SMEUs/assets/102421135/c78b1f07-8423-4a23-90fd-462c334e3ffe)
+Cloud Storage is used to store static files, especially images from SME that we have recorded. The total images stored in cloud storage are 320 images from SME in jpeg format. We create a bucket named capstone-smeus and set access permissions to ensure the files can be accessed and displayed on the frontend later. The following is the configuration of the cloud storage that we use:
+![Cloud Storage Configuration](https://github.com/Skycyon/CC-SMEUs/assets/102421135/c78b1f07-8423-4a23-90fd-462c334e3ffe)
 
 Cloud IAM:
-Kami menggunakan Cloud Identity and Access Management (IAM) untuk mengatur pengaturan keamanan dan izin akses. Kami membuat peran khusus dengan izin yang sesuai untuk setiap anggota tim dari Cloud Computing, membatasi akses hanya pada sumber daya yang diperlukan. Berikut merupakan pengaturan akses dari IAM yang kami gunakan:
-![Konfigurasi IAM](https://github.com/Skycyon/CC-SMEUs/assets/102421135/3d1ddbe3-fc30-4e10-8d60-871e2b4ad5c2)
+We use Cloud Identity and Access Management (IAM) to manage security settings and access permissions. We create custom roles with appropriate permissions for each member of the Cloud Computing team, limiting access to only the resources that are needed. The following are the access settings from IAM that we use:
+![IAM Configuration](https://github.com/Skycyon/CC-SMEUs/assets/102421135/3d1ddbe3-fc30-4e10-8d60-871e2b4ad5c2)
 
 Cloud SQL:
-Untuk menyimpan data-data dari aplikasi SMEUs, kami menggunakan Cloud SQL untuk menampung data-data seperti data SME, data user dan juga data lainnya. Kami membuat instance database dengan jenis MySQL 8.0 dengan nama instance smeus-capstone, mengatur pengguna dan izin akses, serta mengkonfigurasi mesin dari instance tersebut. Berikut merupakan pengaturan dari instance yang kami gunakan:
-![Konfigurasi SQL Instance](https://github.com/Skycyon/CC-SMEUs/assets/102421135/639ba082-e40f-4273-b010-08e6709b5f60)
+We use Cloud SQL to store databases from SMEUs applications such as SME data, user data and other data. We create a database instance with type MySQL 8.0 with the instance name smeus-capstone, set users and access permissions, and configure the engine of the instance. Here are the settings for the instance we use:
+![SQL Instance Configuration](https://github.com/Skycyon/CC-SMEUs/assets/102421135/639ba082-e40f-4273-b010-08e6709b5f60)
+To connect to sql instance from cloud shell, use command "gcloud sql connect smeus=capstone  --user=root --quiet" with the password smeus-capstone.
 
 Compute Engine:
-Kami menggunakan Compute Engine untuk menjalankan instance virtual yang menjalankan aplikasi SMEUs. Kami membuat instance dengan dengan nama smeus-api-instance kemudian mengatur firewall rules untuk mengizinkan akses ke port yang dibutuhkan sehingga memudahkan tim Mobile Development mengakses API yang dibutuhkan. Berikut merupakan konfigurasi dari instance Compute Engine yang kami gunakan:
-
-![Konfigurasi Compute Engine-1](https://github.com/Skycyon/CC-SMEUs/assets/102421135/6277ef34-98ff-4d7a-bf04-578c1166242c)
-![Konfigurasi Compute Engine-2](https://github.com/Skycyon/CC-SMEUs/assets/102421135/733e99ab-d187-4e91-99fc-e013227a7526)
+We use Compute Engine to run virtual instances that run SMEUs applications. We create an instance with the name smeus-api-instance then set firewall rules to allow access to the required port so that it makes it easier for the Mobile Development team to access the required API. The following is the configuration of the Compute Engine instance that we use:
+![Compute Engine Configuration-1](https://github.com/Skycyon/CC-SMEUs/assets/102421135/6277ef34-98ff-4d7a-bf04-578c1166242c)
+![Compute Engine Configuration-2](https://github.com/Skycyon/CC-SMEUs/assets/102421135/733e99ab-d187-4e91-99fc-e013227a7526)
+To run the compute engine instance, connect to SSH and go to directory /var/local/smeus-api and run index.js by writing node index.js.
 
 
 
