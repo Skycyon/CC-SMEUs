@@ -27,8 +27,9 @@ To connect to sql instance from cloud shell, use command "gcloud sql connect sme
 
 Compute Engine:
 We use Compute Engine to run virtual instances that run SMEUs applications. We create an instance with the name smeus-api-instance then set firewall rules to allow access to the required port so that it makes it easier for the Mobile Development team to access the required API. The following is the configuration of the Compute Engine instance that we use:
-![Compute Engine Configuration-1](https://github.com/Skycyon/CC-SMEUs/assets/102421135/6277ef34-98ff-4d7a-bf04-578c1166242c)
-![Compute Engine Configuration-2](https://github.com/Skycyon/CC-SMEUs/assets/102421135/733e99ab-d187-4e91-99fc-e013227a7526)
+![Compute_Engine_Configuration-1](https://github.com/Skycyon/CC-SMEUs/assets/102421135/7356424f-c250-4358-873c-2e00d945fc1a)
+![Compute_Engine_Configuration-2](https://github.com/Skycyon/CC-SMEUs/assets/102421135/5e7fe109-6616-49bd-88a6-0f2ab9f38da5)
+
 
 To run the compute engine instance, connect to SSH and go to directory /var/local/smeus-api and run index.js by writing node index.js.
 
