@@ -1,36 +1,18 @@
 {
-<<<<<<< HEAD
   "name": "coba",
-=======
-  "name": "cc-smeus",
->>>>>>> 8a997c90777bd8ee575ed9563ee4444961dfee3b
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-<<<<<<< HEAD
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "blueimp-md5": "^2.19.0",
-=======
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Skycyon/CC-SMEUs.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Skycyon/CC-SMEUs/issues"
-  },
-  "homepage": "https://github.com/Skycyon/CC-SMEUs#readme",
-  "dependencies": {
->>>>>>> 8a997c90777bd8ee575ed9563ee4444961dfee3b
+    "csv-parser": "^3.0.0",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
     "mysql": "^2.18.1"
